@@ -1,30 +1,33 @@
 <template>
   <q-page>
     <div class="row">
-      <div class="col-12 col-md-6">
-        <div
-          class="fotoHome"
-          :class="{ active: coluna === 1 }"
-          @click="coluna = 1"
-        >
-          <div class="unidade" :class="{ active: coluna === 1 }">
-            <h4>Unidade 01</h4>
-            <template v-if="coluna === 1">
-              <div class="q-pa-sm texto">
-                Alguns clientes dizem que a unidade 01 é uma espécie de resort,
-                um pequeno paraíso, embora fazemos apenas locação da chacara,
-                sem serviços de café da manhã e outros.
-              </div>
-              <q-btn color="primary" class="q-mt-lg">conhecer unidade</q-btn>
-            </template>
-          </div>
-          <q-img src="~/assets/u01.jpeg" />
+      <div class="col-sm-6 q-pa-lg">
+        <h5>Entre em contato</h5>
+        <q-btn icon="phone" class="q-mb-sm"> 11 93020-1599</q-btn>
+        <q-btn icon="person" class="q-mb-sm q-ml-sm" color="positive">
+          Fale agora com um atendente</q-btn
+        ><br />
+        Rua Gennaro Teófilo, 641 - Mailasqui, São Roque - SP, 18143-812
+      </div>
+      <div class="col-sm-6">
+        <div class="fotoHome">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14630.762289494776!2d-47.0905741!3d-23.5436291!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0d0f5a06bc31%3A0x21649c51b96a09c7!2sCh%C3%A1cara%20Lago%20e%20Lazer!5e0!3m2!1spt-BR!2sbr!4v1681956592763!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-6">a</div>
-      <div class="col-sm-6">b</div>
+    <div class="row q-ma-lg">
+      <div class="col-sm-12">
+        <h5>O que nossos clientes estão dizendo</h5>
+        <div class="elfsight-app-db8c7bf0-49a2-42b1-88f5-188614c8a96c"></div>
+      </div>
     </div>
   </q-page>
 </template>

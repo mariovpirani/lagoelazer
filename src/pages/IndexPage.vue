@@ -46,12 +46,29 @@
         </div>
       </div>
     </div>
+    <div class="q-ma-lg column items-center q-gutter-md">
+      <q-card class="my-card q-my-lg" style="max-width: 80%">
+        <q-card-section horizontal>
+          <div class="q-pa-lg">
+            <h6 class="q-pa-none q-ma-none">Chácara Lago e Lazer</h6>
+            Apaixonado por lagos ornamentais , amante da natureza e fascinado
+            por fogueira tive a ideia de unificar estes 3 elementos junto a um
+            lindo salão de festas integrando-o com os lagos para aproveitar bons
+            momentos da vida com família e amigos, faz parte daqui ver passaros
+            mergulhar e pescar o seu próprio alimento , ver macacos passeando
+            pela chacara, estamos cercado por uma linda floresta , acredito que
+            estamos entre as chácaras mais lindas ja vista por você , então
+            fazer um churrasco, andar de pedalinho, pescar , descansar,
+            caminhada ou fazer marshmallow com os filhos na fogueira são uma das
+            inúmeras opções de lazer que temos por aqui .
+          </div>
+          <q-img class="col-5" src="~/assets/unidade01/banner01.jpg" />
+        </q-card-section>
+      </q-card>
+    </div>
     <div style="border: none">
       <q-carousel
         v-model="slide"
-        vertical
-        transition-prev="slide-down"
-        transition-next="slide-up"
         swipeable
         style="background-color: darkcyan"
         animated
@@ -99,26 +116,11 @@
         </q-carousel-slide>
       </q-carousel>
     </div>
-    <div class="q-pa-md column items-center q-gutter-md">
-      <q-card
-        class="my-card bg-darkcyan text-white q-mt-lg"
-        style="max-width: 80%; background-color: darkcyan"
-      >
-        <q-card-section>
-          <div class="row">
-            <div class="col-sm-4 q-pa-lg">
-              <q-img src="~/assets/contato.jpg" class="" />
-            </div>
-            <div class="col-sm-8 q-pa-lg">
-              As chacáras são ideias para festas, casamentos, famílias e amigos
-              curtirem dias que jamais serão esquecidos pela beleza natural da
-              mata em torno delas.<br />
-              Contamos ainda com um estacionamento com capacidade para 70
-              carros.
-            </div>
-          </div>
-        </q-card-section>
-      </q-card>
+    <div class="row q-ma-lg">
+      <div class="col-sm-12">
+        <h5>O que nossos clientes estão dizendo</h5>
+        <div class="elfsight-app-db8c7bf0-49a2-42b1-88f5-188614c8a96c"></div>
+      </div>
     </div>
   </q-page>
 </template>
@@ -165,14 +167,18 @@ export default defineComponent({
   background: rgba(255, 255, 255, 0.8);
   z-index: 9000;
   text-align: center;
-  top: 0%;
-  height: 20%;
+  top: 20%;
+  height: 120px;
+  margin-top: -15%;
   width: 100%;
   transition-duration: 1s;
-  transition-timing-function: ease-in-out;
   position: absolute;
 }
 .unidade.active {
+  top: 0%;
+  margin-top: 0;
+
+  transition-timing-function: ease-in-out;
   transition-duration: 1s;
   height: 100%;
 }
