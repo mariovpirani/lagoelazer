@@ -4,7 +4,7 @@
       <div class="col-sm-12 q-pa-lg" style="width: 100%">
         <q-carousel animated v-model="slide33" infinite>
           <q-carousel-slide :name="1" img-src="~/assets/unidade01/banner01.jpg">
-            <div class="absolute-bottom custom-caption">
+            <div class="absolute-bottom \">
               <div class="text-h2">Unidade 01</div>
               <div class="text-subtitle1"></div>
             </div>

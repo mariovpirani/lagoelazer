@@ -48,8 +48,8 @@
     </div>
     <div class="q-ma-lg column items-center q-gutter-md">
       <q-card class="my-card q-my-lg" style="max-width: 80%">
-        <q-card-section horizontal>
-          <div class="q-pa-lg">
+        <q-card-section>
+          <div class="col-sm-12 col-md-5 q-pa-lg">
             <h6 class="q-pa-none q-ma-none">Chácara Lago e Lazer</h6>
             Apaixonado por lagos ornamentais , amante da natureza e fascinado
             por fogueira tive a ideia de unificar estes 3 elementos junto a um
@@ -62,7 +62,6 @@
             caminhada ou fazer marshmallow com os filhos na fogueira são uma das
             inúmeras opções de lazer que temos por aqui .
           </div>
-          <q-img class="col-5" src="~/assets/unidade01/banner01.jpg" />
         </q-card-section>
       </q-card>
     </div>
